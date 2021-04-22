@@ -1,0 +1,186 @@
+.vegetableVue {
+  background: transparent url('../images/vegetable-background.png') 0% 0% no-repeat padding-box;
+  width: 100vw;
+  height: 100vh;
+  background-position: 22% 88%;
+  display: flex;
+}
+
+.next-button-container {
+  // encore pour vous faire plaisir ahah
+  position: fixed;
+  top: 916px;
+  right: 60px;
+  display: flex;
+
+  .page-preview img {
+    width: 161px;
+    height: 107px;
+  }
+
+  .page-preview {
+    display: flex;
+
+    .preview-text-fruit {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 55px;
+      right: 120px;
+
+      .next-text {
+        font: normal normal normal 12px/14px Acumin Pro;
+        letter-spacing: 0.9px;
+        color: #F1D145;
+        opacity: 1;
+      }
+
+      .next-page {
+        font: normal normal bold 16px/22px Acumin Pro;
+        letter-spacing: 0px;
+        color: #375238;
+        opacity: 1;
+      }
+    }
+
+    .preview-text-fruit p {
+      margin: 0;
+    }
+  }
+
+  .next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 107px;
+    background: #F1D145 0% 0% no-repeat padding-box;
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .next-button {
+    background: linear-gradient(90deg, #375238 50%, #F1D145 50%);
+    position: relative;
+  }
+
+  .next-button:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  .next-button,
+  .next-button:after {
+    background-size: 230%;
+    background-position: 100%;
+    transition: 1s, font-size 0.2s;
+  }
+
+  .next-button:hover,
+  .next-button:hover:after {
+    background-position: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .vegetableVue {
+    background: transparent url('../images/vegetable-background.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: 0% 88%;
+    display: flex;
+  }
+
+  .next-button-container {
+    // encore pour vous faire plaisir ahah
+    position: fixed;
+    top: 752px;
+    right: 30px;
+    display: flex;
+
+    .page-preview img {
+      width: 93px;
+      height: 62px;
+    }
+
+    .page-preview {
+      display: flex;
+
+      .preview-text-fruit {
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 25px;
+        right: 67px;
+
+        .next-text {
+          font: normal normal normal  14px/14px Acumin Pro;
+          letter-spacing: 0.9px;
+          color: #F1D145;
+          opacity: 1;
+        }
+
+        .next-page {
+          font: normal normal bold 10px/10px Acumin Pro;
+          letter-spacing: 0px;
+          color: #375238;
+          opacity: 1;
+        }
+      }
+
+      .preview-text-fruit p {
+        margin: 0;
+      }
+    }
+
+    .next-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 67px;
+      height: 62px;
+      background: #F1D145 0% 0% no-repeat padding-box;
+      color: #fff;
+      opacity: 1;
+      cursor: pointer;
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .next-button {
+      background: linear-gradient(90deg, #375238 50%, #F1D145 50%);
+      position: relative;
+    }
+
+    .next-button:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+    }
+
+    .next-button,
+    .next-button:after {
+      background-size: 230%;
+      background-position: 100%;
+      transition: 1s, font-size 0.2s;
+    }
+
+    .next-button:hover,
+    .next-button:hover:after {
+      background-position: 0;
+    }
+  }
+}

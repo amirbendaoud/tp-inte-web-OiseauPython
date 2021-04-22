@@ -1,0 +1,556 @@
+.menu {
+  .right-side-part {
+    height: calc(100vh - 120px);
+    width: 149px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    z-index: 2;
+
+    .menu-center {
+      height: 539px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .burger-logo img {
+      transition: 0.3s ease-out;
+      cursor: pointer;
+    }
+
+    .burger-logo img:hover {
+      transform: scale(1.1);
+    }
+
+    .mobile-burger-logo {
+      display: none;
+    }
+
+    .separator div {
+      mix-blend-mode: multiply;
+      border-left: 1px solid #F3D145;
+      width: 0px;
+      height: 47px;
+    }
+
+    .orgabits-text-logo {
+      text-transform: uppercase;
+      transform: rotate(-90deg);
+      font: normal normal bold 20px/28px Acumin Pro;
+      margin-bottom: 15px;
+
+      .text-orga {
+        color: #F1D145;
+      }
+
+      .text-bits {
+        color: #375238;
+      }
+    }
+  }
+
+  .left-side-part {
+    position: absolute;
+    left: -100%;
+    z-index: 1;
+    color: #005c9c;
+    background: rgba(#fff, 1);
+    width: calc(100% - 205px);
+    height: calc(100vh - 150px);
+    padding: 75px 0 75px 205px;
+    display: flex;
+    transition: 900ms left cubic-bezier(0.97, 0, 0.5, 1);
+
+    &.active {
+      left: 0;
+      animation: fadein 0.5s;
+      -moz-animation: fadein 0.5s;
+      -webkit-animation: fadein 0.5s;
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-moz-keyframes fadein {
+
+      /* Firefox */
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes fadein {
+
+      /* Safari and Chrome */
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .mobile-main-menu {
+      display: none;
+    }
+
+    .mobile-menu-footer {
+      display: none;
+    }
+
+    .main-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: fadein 2s;
+      -moz-animation: fadein 2s;
+      -webkit-animation: fadein 2s;
+
+      .main-product {
+        display: flex;
+        align-items: center;
+        width: 260px;
+
+        .product-separator div {
+          mix-blend-mode: multiply;
+          border-top: 1px solid #F3D145;
+          width: 47px;
+          height: 0;
+          margin-right: 15px;
+        }
+
+        .product-title p {
+          font: normal normal bold 24px/29px Acumin Pro;
+          letter-spacing: 1.8px;
+          color: #3B573B;
+          opacity: 1;
+          margin: 0;
+        }
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadein {
+
+        /* Firefox */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadein {
+
+        /* Safari and Chrome */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+    }
+
+    .secondary-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 470px;
+      margin-left: 335px;
+
+      .secondary-menu-col {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 170px;
+
+        .secondary-menu-element {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 70px;
+
+          .secondary-menu-element-separator div {
+            mix-blend-mode: multiply;
+            border-top: 1px solid #F3D145;
+            width: 25px;
+            height: 0;
+            margin-right: 13px;
+          }
+
+          .secondary-menu-element-title p {
+            margin: 0;
+            font: normal normal bold 12px/14px Acumin Pro;
+            letter-spacing: 0.9px;
+            color: #375238;
+            opacity: 1;
+          }
+        }
+
+        .secondary-menu-element:hover {
+          .secondary-menu-element-separator div {
+            border-top: 1px solid #375238;
+          }
+        }
+      }
+    }
+
+    .tomatoes-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 0px;
+      right: -1100px;
+      visibility: hidden;
+
+      &.active {
+        animation-delay: 1.2s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        animation-name: slidein;
+      }
+    }
+
+    @keyframes slidein {
+      from {
+        right: -1100px;
+        visibility: hidden;
+      }
+
+      to {
+        right: -615px;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+// .tomatoes-container {
+//       display: none;
+//       position: absolute;
+//       top: 0px;
+//       right: -900px;
+//       &.active {
+//         display: flex;
+//         align-items: center;
+//         animation-delay: 2s;
+//         animation-duration: 2s;
+//         animation: slidein forwards;
+//         // animation: cssAnimation 0s 2s forwards;
+//       }
+//     }
+
+//     @keyframes slidein {
+//       from {
+//         right: -900px;
+//       }
+
+//       to {
+//         right: -167px;
+//       }
+//     }
+
+//     @keyframes cssAnimation {
+//       from {
+//         visibility: visible;
+//       }
+//       to {
+//         visibility: visible;
+//       }
+//     }
+
+
+@media screen and (max-width: 640px) {
+  .menu {
+    .right-side-part {
+      height: 30px;
+      width: calc(100vw - 60px);
+      padding: 30px 30px 0 30px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      z-index: 2;
+
+      .menu-center {
+        display: none;
+      }
+
+      .rabbit-logo img {
+        width: 35px;
+      }
+
+      .orgabits-text-logo {
+        text-transform: uppercase;
+        transform: rotate(0deg);
+        font: normal normal bold 20px/28px Acumin Pro;
+        margin-bottom: 0;
+        position: relative;
+        right: 67px;
+
+        p {
+          margin: 0;
+        }
+
+        .text-orga {
+          color: #F1D145;
+        }
+
+        .text-bits {
+          color: #375238;
+        }
+      }
+
+      .mobile-burger-logo {
+        width: 47px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .separator-menu-1 div,
+        .separator-menu-2 div,
+        .separator-menu-3 div {
+          border-top: 1px solid #F3D145;
+          width: 47px;
+          height: 0px;
+        }
+
+        .separator-menu-2 div {
+          width: 35px;
+          margin: 9px 0;
+        }
+
+        .separator-menu-3 div {
+          width: 25px;
+        }
+      }
+
+      &:hover {
+
+        .separator-menu-1 div,
+        .separator-menu-2 div,
+        .separator-menu-3 div {
+          border-top: 1px solid #375238;
+        }
+      }
+    }
+
+    .left-side-part {
+      position: absolute;
+      left: -100%;
+      z-index: 3;
+      color: #005c9c;
+      background: rgba(#fff, 1);
+      width: calc(100vw - 34px);
+      height: calc(100vh - 70px);
+      padding: 35px 0 35px 34px;
+      display: flex;
+      transition: 300ms left cubic-bezier(0.97, 0, 0.5, 1);
+
+      &.active {
+        left: 0;
+        animation: fadein 0.5s;
+        -moz-animation: fadein 0.5s;
+        -webkit-animation: fadein 0.5s;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadein {
+
+        /* Firefox */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadein {
+
+        /* Safari and Chrome */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      .main-menu, .secondary-menu {
+        display: none;
+      }
+
+      .mobile-main-menu {
+        display: flex;
+        flex-direction: column;
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        -webkit-animation: fadein 2s;
+
+        .close-mobile-menu {
+          position: absolute;
+          top: 38px;
+          right: 30px;
+
+          img {
+            width: 13px;
+          }
+        }
+
+        .mobile-main-product {
+          display: flex;
+          align-items: center;
+          width: 260px;
+          margin-bottom: 34px;
+
+          .product-separator div {
+            mix-blend-mode: multiply;
+            border-top: 1px solid #F3D145;
+            width: 47px;
+            height: 0;
+            margin-right: 15px;
+          }
+
+          .product-title p {
+            font: normal normal bold 24px/29px Acumin Pro;
+            letter-spacing: 1.8px;
+            color: #3B573B;
+            opacity: 1;
+            margin: 0;
+          }
+        }
+
+        .sub-main-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 0;
+
+          .secondary-menu-col {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 165px;
+            margin-left: 63px;
+            margin-bottom: 32px;
+
+            .secondary-menu-element {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 70px;
+
+              .secondary-menu-element-separator div {
+                mix-blend-mode: multiply;
+                border-top: 1px solid #F3D145;
+                width: 25px;
+                height: 0;
+                margin-right: 13px;
+              }
+
+              .secondary-menu-element-title p {
+                margin: 0;
+                font: normal normal bold 12px/14px Acumin Pro;
+                letter-spacing: 0.9px;
+                color: #375238;
+                opacity: 1;
+              }
+            }
+
+            .secondary-menu-element:hover {
+              .secondary-menu-element-separator div {
+                border-top: 1px solid #375238;
+              }
+            }
+          }
+        }
+
+        .mobile-menu-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          position: absolute;
+          left: 0;
+          bottom: 30px;
+          width: calc(100vw - 60px);
+          padding: 0 30px;
+
+          .follow {
+            font: normal normal bold 12px/14px Acumin Pro;
+            letter-spacing: 0.9px;
+            color: #375238;
+            padding-bottom: 4px;
+          }
+
+          .mobile-social-icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 175px;
+
+            .social-img-container {
+              img {
+                height: 21px;
+                width: 21px;
+              }
+            }
+          }
+        }
+      }
+
+      .tomatoes-container {
+        display: none;
+      }
+    }
+  }
+}
