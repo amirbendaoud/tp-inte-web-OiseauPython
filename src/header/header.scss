@@ -1,0 +1,89 @@
+.header {
+  width: calc(100vw - 269px);
+  height: 165px;
+  margin-left: 149px;
+  padding: 70px 60px 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+
+  .our-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+
+    .product-separator div {
+      mix-blend-mode: multiply;
+      border-top: 1px solid #F3D145;
+      width: 47px;
+      height: 0;
+    }
+
+    .product-title p {
+      font: normal normal bold 24px/29px Acumin Pro;
+      letter-spacing: 1.8px;
+      color: #3B573B;
+      opacity: 1;
+      margin: 0;
+    }
+  }
+
+  .header-col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: -200px;
+    height: 100%;
+
+    .header-element {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70px;
+
+      .header-element-separator div {
+        mix-blend-mode: multiply;
+        border-top: 1px solid #F3D145;
+        width: 25px;
+        height: 0;
+        margin-right: 13px;
+      }
+
+      .header-element-title p {
+        margin: 0;
+        font: normal normal bold 12px/14px Acumin Pro;
+        letter-spacing: 0.9px;
+        color: #375238;
+        opacity: 1;
+      }
+    }
+
+    .header-element:hover {
+      .header-element-separator div {
+        border-top: 1px solid #375238;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    .social-img-container {
+      img {
+        height: 21px;
+        width: 21px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    display: none;
+  }
+}
