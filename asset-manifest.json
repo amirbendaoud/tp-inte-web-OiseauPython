@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.59fed073.chunk.css",
-    "main.js": "/static/js/main.c510063e.chunk.js",
-    "main.js.map": "/static/js/main.c510063e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e40b89fc.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e40b89fc.js.map",
-    "static/js/2.377406a9.chunk.js": "/static/js/2.377406a9.chunk.js",
-    "static/js/2.377406a9.chunk.js.map": "/static/js/2.377406a9.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.59fed073.chunk.css.map": "/static/css/main.59fed073.chunk.css.map",
-    "static/js/2.377406a9.chunk.js.LICENSE.txt": "/static/js/2.377406a9.chunk.js.LICENSE.txt",
-    "static/media/little-fruit.8bc53495.png": "/static/media/little-fruit.8bc53495.png",
-    "static/media/little-vegetables.a5d4cba3.png": "/static/media/little-vegetables.a5d4cba3.png",
-    "static/media/fruitVue.scss": "/static/media/pineapple-background.76ad5822.png",
-    "static/media/tomatoes.fd653eb3.png": "/static/media/tomatoes.fd653eb3.png",
-    "static/media/vegetableVue.scss": "/static/media/vegetable-background.9b1ddfe5.png"
+    "main.css": "/tp-inte-web-OiseauPython/static/css/main.a4ca8628.chunk.css",
+    "main.js": "/tp-inte-web-OiseauPython/static/js/main.c510063e.chunk.js",
+    "main.js.map": "/tp-inte-web-OiseauPython/static/js/main.c510063e.chunk.js.map",
+    "runtime-main.js": "/tp-inte-web-OiseauPython/static/js/runtime-main.7e0be87e.js",
+    "runtime-main.js.map": "/tp-inte-web-OiseauPython/static/js/runtime-main.7e0be87e.js.map",
+    "static/js/2.377406a9.chunk.js": "/tp-inte-web-OiseauPython/static/js/2.377406a9.chunk.js",
+    "static/js/2.377406a9.chunk.js.map": "/tp-inte-web-OiseauPython/static/js/2.377406a9.chunk.js.map",
+    "index.html": "/tp-inte-web-OiseauPython/index.html",
+    "static/css/main.a4ca8628.chunk.css.map": "/tp-inte-web-OiseauPython/static/css/main.a4ca8628.chunk.css.map",
+    "static/js/2.377406a9.chunk.js.LICENSE.txt": "/tp-inte-web-OiseauPython/static/js/2.377406a9.chunk.js.LICENSE.txt",
+    "static/media/little-fruit.8bc53495.png": "/tp-inte-web-OiseauPython/static/media/little-fruit.8bc53495.png",
+    "static/media/little-vegetables.a5d4cba3.png": "/tp-inte-web-OiseauPython/static/media/little-vegetables.a5d4cba3.png",
+    "static/media/fruitVue.scss": "/tp-inte-web-OiseauPython/static/media/pineapple-background.76ad5822.png",
+    "static/media/tomatoes.fd653eb3.png": "/tp-inte-web-OiseauPython/static/media/tomatoes.fd653eb3.png",
+    "static/media/vegetableVue.scss": "/tp-inte-web-OiseauPython/static/media/vegetable-background.9b1ddfe5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e40b89fc.js",
+    "static/js/runtime-main.7e0be87e.js",
     "static/js/2.377406a9.chunk.js",
-    "static/css/main.59fed073.chunk.css",
+    "static/css/main.a4ca8628.chunk.css",
     "static/js/main.c510063e.chunk.js"
   ]
 }
