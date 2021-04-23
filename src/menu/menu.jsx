@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import "./menu.scss";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import fruitVue from "../fruitVue/fruitVue";
 import VegetableVue from "../vegetableVue/vegetableVue";
 import logo from "../images/logoRabbit@2x.png";
 import panier from "../images/panier.png";
 import hamburger from "../images/hamburger.png";
-import mobileMenu from "../images/mobile-menu.png";
 import search from "../images/search.png";
 import tomatoes from "../images/tomatoes.png";
 import twitter from "../images/twitter.png";

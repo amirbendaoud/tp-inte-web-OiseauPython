@@ -2,7 +2,7 @@ import './fruitVue.scss';
 import Header from "../header/header";
 import littleVegetable from "../images/little-vegetables.png";
 import VegetableVue from "../vegetableVue/vegetableVue";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Switch, Route, Link } from "react-router-dom";
 
 function FruitVue() {
   return (
