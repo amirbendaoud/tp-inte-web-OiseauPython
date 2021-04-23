@@ -1,6 +1,6 @@
 
 # inte-web-starter
-
+[![Publish Pages CI](https://github.com/juu-aix-ynov-campus/tp-inte-web-OiseauPython/actions/workflows/static.yml/badge.svg)](https://github.com/juu-aix-ynov-campus/tp-inte-web-OiseauPython/actions/workflows/static.yml)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
